@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-wlln
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas/test-images@sha256:78bd34cdc22ba9adcc327e1211c961839e5381cf2baa1986ae3423ccc1308bec
+        name: pip-e2e-test
+        resources: {}
+status: {}
